@@ -1,7 +1,9 @@
+import java.util.List;
+
 public class ElectricPokemon extends Pokemon {
 //   2 private final variables
     private final String name;
-
+    private List<String> attacks;
 
 
 //    1 constructor
@@ -11,8 +13,13 @@ public ElectricPokemon(String name, int level, int hp, String food, String sound
 }
 
 //    1 getter
-    public boolean getAttacks() {
-    }
+    public List<String> getAttacks() {
+        return attacks;
+}
+//    1 setter
+    public void setAttacks(List<String> attacks) {
+        this.attacks = attacks;
+}
 
 //    4 methods
     public void thunderPunch(Pokemon pokemon, Pokemon gymPokemon) {

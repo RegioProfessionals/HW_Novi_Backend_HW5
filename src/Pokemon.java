@@ -1,16 +1,18 @@
+import java.util.List;
+
 public abstract class Pokemon {
 
-    //    5 private final variables
-    private final String name;
+//    5 private final variables
     private final int level;
     private final int hp;
     private final String food;
     private final String sound;
     private String type;
+    private String name;
+
 
 //    1 constructor
-    public Pokemon( String name, int level, int hp, String food, String sound) {
-        this.name = name;
+    public Pokemon(int level, int hp, String food, String sound) {
         this.level = level;
         this.hp = hp;
         this.food = food;
@@ -18,9 +20,22 @@ public abstract class Pokemon {
     }
 
     // 6 getters
+    public int getLevel() {
+        return level;
+    }
+
     public int getHp() {
         return hp;
     }
+
+    public String getFood() {
+        return food;
+    }
+
+    public String getSound() {
+        return sound;
+    }
+
 
     public String getName() {
         return name;
@@ -30,17 +45,6 @@ public abstract class Pokemon {
         return type;
     }
 
-    public int getLevel() {
-        return level;
-    }
-
-    public String getFood() {
-        return food;
-    }
-
-    public Object getSound() {
-        return sound;
-    }
 
     //    1 setter
     public void setType(String newType) {

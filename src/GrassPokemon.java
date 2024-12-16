@@ -1,6 +1,9 @@
+import java.util.List;
+
 public class GrassPokemon extends Pokemon {
 //    2 private final variables
     private final String name;
+    private List<String> attacks;
 
 
 //    1 constructor
@@ -11,10 +14,16 @@ public class GrassPokemon extends Pokemon {
 
 
 //    1 getter
-    public boolean getAttacks() {
+    public List<String> getAttacks() {
+        return attacks;
     }
 
-//    4 methods
+//    1 setter
+    public void setAttacks(List<String> attacks) {
+        this.attacks = attacks;
+    }
+
+    //    4 methods
     public void leafStorm(Pokemon pokemon, Pokemon gymPokemon) {
     }
 

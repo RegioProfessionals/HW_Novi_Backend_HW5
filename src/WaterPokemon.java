@@ -1,20 +1,26 @@
-public class WaterPokemon  extends Pokemon {
+import java.util.Arrays;
+import java.util.List;
+
+public class WaterPokemon extends Pokemon {
     // 2 private final varaiabelen
     private final String name;
-    private String food;
-    private final String sound;
+    private List<String> attacks;
+
 
 
 //    1 constructor
     public WaterPokemon(String name, int level, int hp, String food, String sound) {
-        super(level, hp);
+        super(level, hp, food, sound);
         this.name = name;
-        this.food = food;
-        this. sound = sound;
     }
 
 //    1 getter
-    public boolean getAttacks() {
+    public List<String> getAttacks() {
+        return attacks;
+    }
+//    1 setter
+    public void setAttacks(List<String> attacks) {
+        this.attacks = attacks;
     }
 
 //    4 methodes
@@ -29,4 +35,6 @@ public class WaterPokemon  extends Pokemon {
 
     public void rainDance(Pokemon pokemon, Pokemon gymPokemon) {
     }
+
+
 }
