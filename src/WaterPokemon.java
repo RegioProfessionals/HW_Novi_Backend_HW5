@@ -4,7 +4,7 @@ import java.util.List;
 public class WaterPokemon extends Pokemon {
     // 2 private final varaiabelen
     private final String name;
-    private List<String> attacks;
+    private List<String> attacks = Arrays.asList("Surf", "HydroPump", "HydroCanon", "RainDance");
 
 
 

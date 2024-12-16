@@ -1,9 +1,10 @@
+import java.util.Arrays;
 import java.util.List;
 
 public class ElectricPokemon extends Pokemon {
 //   2 private final variables
     private final String name;
-    private List<String> attacks;
+    private List<String> attacks = Arrays.asList("ThunderPunch", "ElectroBall", "Thunder", "VoltTackle");
 
 
 //    1 constructor

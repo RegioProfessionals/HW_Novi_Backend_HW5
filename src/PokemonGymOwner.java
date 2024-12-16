@@ -5,12 +5,13 @@ public class PokemonGymOwner extends PokemonTrainer {
 //    8 variables (6 in the list)
     private String name;
     private String town;
-    private List<Pokemon> pokemons;
+    private static List<Pokemon> pokemons;
 
 //    1 constructor
-    public PokemonGymOwner(String userA, String town, List<Pokemon> pokemons) {
-        super(userA, pokemons);
+    public PokemonGymOwner(String name, String town, List<Pokemon> pokemons) {
+        super(name, pokemons);
         this.town = town;
+        System.out.println(this.getName() + this.town + this.getPokemons());
     }
 
 //      getters

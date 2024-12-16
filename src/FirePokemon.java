@@ -1,9 +1,10 @@
+import java.util.Arrays;
 import java.util.List;
 
 public class FirePokemon extends Pokemon {
 //    2 private final varioables
     private final String name;
-    private List<String> attacks;
+    private List<String> attacks = Arrays.asList("Inferno", "PyroBall", "FireLash", "FlameThrower");
 
 
 //    1 constructor

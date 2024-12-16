@@ -1,13 +1,12 @@
 import java.util.List;
 
 public class PokemonTrainer {
-    private final String userA;
     private String name;
-    private List<Pokemon> pokemons;
+    private static List<Pokemon> pokemons;
 
 //    1 constructor
-    public PokemonTrainer(String userA, List<Pokemon> pokemons) {
-        this.userA = userA;
+    public PokemonTrainer(String name, List<Pokemon> pokemons) {
+        this.name = name;
         this.pokemons = pokemons;
     }
 
@@ -18,6 +17,7 @@ public class PokemonTrainer {
     public void setName(String name) {
         this.name = name;
     }
+
 
     public List<Pokemon> getPokemons() {
         return pokemons;
